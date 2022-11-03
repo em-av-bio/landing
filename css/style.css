@@ -1,0 +1,172 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&family=News+Cycle&family=Patua+One&display=swap');
+
+/* Fontawesome */
+@import url('https://use.fontawesome.com/releases/v6.1.2/css/all.css');
+
+/* Components */
+@import url("components/buttons.css");
+@import url("components/container.css");
+@import url("components/card.css");
+
+/* Variables */
+
+:root {
+  --font-body: 'News Cycle', sans-serif;
+  --font-heading: 'Patua One', cursive;
+  --font-code: 'Courier Prime', monospace;
+  --color-dark: #333333;
+  --color-red: #9b060f;
+  --color-redish: #ffd1cc;
+  --gap: 4rem;
+  --gutter: 5.6rem;
+}
+
+/* Utilities */
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-heading);
+  margin: 0;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 5.6rem;
+}
+
+h2 {
+  font-size: 4rem;
+  text-align: center;
+}
+
+h3 {
+  font-size: 3.2rem;
+  color: var(--color-red);
+}
+
+h3::after {
+  content: '';
+  background-image: url(../images/cat_paw.svg);
+  width: 3rem;
+  height: 2.8rem;
+  display: inline-block;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin-left: .8rem;
+}
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 3.2rem;
+  }
+  h3 {
+    font-size: 2.8rem;
+  }
+}
+a {
+  text-decoration: none;
+}
+
+p {
+  font-size: 2.4rem;
+  margin: 0;
+}
+code {
+  font-family: var(--font-code);
+  display: block;
+  padding: 0.8rem;
+  font-size: 1.6rem;
+  border-radius: 0.2rem;
+  border: solid 0.1rem black;
+  background-color: white;
+}
+
+/* Custom design below! */
+
+.hero {
+  background-image: url(../images/cat_hero.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 90vh;
+  width: 100%
+}
+.hero .container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.overlay {
+  background-color: rgba(255,255,255,.75);
+  border-radius: .8rem;
+  padding: 2.4rem;
+  width: 60rem;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap);
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .hero {
+    height: 100vh;
+  }
+}
+.how-it-works {
+  padding-top: var(--gutter);
+  padding-bottom: var(--gutter);
+}
+.cards-container {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  gap: var(--gap);
+  padding-top: var(--gutter);
+}
+@media screen and (max-width: 768px) {
+  .cards-container {
+    flex-direction: column;
+  }
+}
+footer {
+  background-color: var(--color-dark);
+  padding-top: var(--gutter);
+  padding-bottom: var(--gutter);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 8rem;
+}
+footer .logo {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+  margin-top: -12.6rem;
+  background-color: var(--color-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer .logo img {
+  height: 80%;
+  width: auto;
+}
+footer p {
+  color: white;
+  text-align: center;
+}

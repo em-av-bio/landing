@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Cat CSS - Learn CSS with cats</title>
+  <link rel="shortcut icon" href="data:image/x-icon;" type="image/x-icon">
+  <!-- We need this line below for responsiveness! -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" href="images/cat_favicon.png" />
+</head>
+<body>
+  <!-- code a Hero / Banner section -->
+  <section class="hero">
+    <div class="container">
+      <div class="overlay">
+        <h1>Learn CSS with cats</h1>
+        <p>
+          Cats are a fluid material designed to fit in various places.
+          <br />Their behavior is quite similar to water.
+        </p>
+        <a href="#howItWorks" class="btn-kitty-cat">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 353.41 179.18">
+            <path
+              d="M241.3,52.94s11.96-35.2,22.04-32.44,14.16,62.09,14.16,62.09c0,0-10.19-10.87-13.22-13.45s-14.39-.95-12.41-4.62,5.97-9.63,3.67-11.01-9.25,2.06-14.25-.58Zm-156.3,21.71c-4.95,5.22-8.21,8.98-8.21,8.98,0,0-3.76-15.45-6.97-20.03s-13.76-23.85-10.55-27.06,18.34,0,27.52,5.5,23.39,20.18,23.39,20.18c0,0-10.55-6.54-13.76-4.42s-.64,.75,.6,6.25-7.07,5.37-12.02,10.59Zm23.77,37.11c13.44,0,24.34,12.11,24.34,27.06s-10.9,27.06-24.34,27.06-24.34-12.11-24.34-27.06,10.9-27.06,24.34-27.06Zm1.15,6.22c-9.77,0-17.69,8.65-17.69,19.32s7.92,19.32,17.69,19.32,17.69-8.65,17.69-19.32-7.92-19.32-17.69-19.32Zm8.9,12.87c0,4.67-2.98,8.45-6.65,8.45s-6.65-3.79-6.65-8.45,2.98-8.45,6.65-8.45,6.65,3.79,6.65,8.45Zm102.74,7.97c0-14.94,10.9-27.06,24.34-27.06s24.34,12.11,24.34,27.06-10.9,27.06-24.34,27.06-24.34-12.11-24.34-27.06Zm5.5-1.52c0,10.67,7.92,19.32,17.69,19.32s17.69-8.65,17.69-19.32-7.92-19.32-17.69-19.32-17.69,8.65-17.69,19.32Zm15.45,2c-3.67,0-6.65-3.79-6.65-8.45s2.98-8.45,6.65-8.45,6.65,3.79,6.65,8.45-2.98,8.45-6.65,8.45Zm-67.65,25.35s-4.89-3.67-6.11-5.2-3.21-3.67-3.36-5.35,9.48-2.29,9.48-2.29h3.15s9.63,.61,9.48,2.29-2.14,3.82-3.36,5.35-6.11,5.2-6.11,5.2v13.98s129.17-.54,129.17-.54c.44-4.32,.67-8.7,.67-13.13,0-.59,0-1.19-.01-1.78,0,0,11.11-1.05,23.77-.3,12.66,.74,21.48,2.24,21.81-1.11s-12.45-4.75-25.61-5.35-20.21,.6-20.21,.6c-.22-3.48-.57-6.92-1.06-10.31,0,0,10.47-2.61,23.08-3.98s21.55-1.38,21.32-4.73-13.07-2.61-26.14-1-19.26,3.8-19.26,3.8c-2.88-14.91-8.38-28.91-16.01-41.52h0s1.21-90.15-23.42-98.94c-12.84-4.59-51.86,41.39-51.86,41.39h0c-11.63-3.36-23.93-5.16-36.66-5.16-14.4,0-28.26,2.31-41.21,6.56h0S72.11,9.03,47.35,20.5c-8.01,3.71,20.64,75.07,20.64,75.07h0c-8.75,13.41-15.05,28.54-18.24,44.75,0,0-6.98-2.41-20.05-4.02s-25.91-2.35-26.14,1,8.71,3.35,21.32,4.73,23.85,4.19,23.85,4.19c-.53,3.59-.91,7.23-1.14,10.91,0,0-8.96-1.2-22.1-.31-13.14,.9-25.89,2.6-25.48,5.93s9.19,1.64,21.83,.61c12.64-1.03,25.52-.35,25.52-.35,0,.65-.01,1.3-.01,1.95,0,4.81,.27,9.55,.79,14.22l126.86-.53-.15-13.99Z" />
+          </svg>
+          <span>Cat this out!</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- code a "How it works" section -->
+  <section id="howItWorks" class="how-it-works">
+    <div class="container">
+      <h2>Here are a few CSS properties...</h2>
+      <div class="cards-container">
+        <div class="card">
+          <div>
+            <img src="images/cat_fit.png" />
+            <code>box-sizing: <span>border-box</span>;</code>
+          </div>
+          <h3>Box sizing</h3>
+          <p>The <strong>box-sizing</strong> CSS property sets how the total width and height of an element is calculated.</p>
+        </div>
+        <div class="card">
+          <div>
+            <img src="images/cat_rotate.png" />
+            <code>transform: <span>rotate(90deg)</span>;</code>
+          </div>
+          <h3>Rotation</h3>
+          <p>The <strong>rotate()</strong> CSS function defines a transformation that rotates an element around a fixed point on the 2D plane, without deforming it.</p>
+        </div>
+        <div class="card">
+          <div>
+            <img src="images/cat_overflow_visible.png" />
+            <code>overflow: <span>visible</span>;</code>
+          </div>
+          <h3>Overflow</h3>
+          <p>The <strong>overflow</strong> CSS shorthand property sets the desired behavior for an element's overflow — i.e. when an element's content is too big to fit in its block formatting context — in both directions.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- code a footer -->
+  <footer>
+    <div class="logo">
+      <img src="images/css.svg" />
+    </div>
+    <div class="container">
+      <p>This website was coded with agility and deviousness.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
